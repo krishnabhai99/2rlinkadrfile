@@ -13,31 +13,31 @@ load_dotenv()
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8154426339:AAFjoBgGNTbGgUxV5MhO8kFEcRn1e0NBNP0")  
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7859871122:AAG02nTCQuhzggsZ42y7OVlR2xKFV-qwCWE")  
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "19863702"))
+APP_ID = int(os.environ.get("APP_ID", "27705761"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "6d48cb362a97a43cfc944fd5c0f917f9")
+API_HASH = os.environ.get("API_HASH", "822cb334ca4527a134aae97f9fe44fd6")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002008354608"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7328629001"))
+OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
 #Port
 PORT = os.environ.get("PORT", "3732")
 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://koyeb67user:rohit870@cluster0.fuqhj.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "Muth_na_maroxbot")
+DB_URI = os.environ.get("DATABASE_URL", "")
+DB_NAME = os.environ.get("DATABASE_NAME", "AxomBotz")
 JOIN_REQS_DB = os.environ.get("JOIN_REQS_DB", DB_URI)
 JOIN_REQS_DB2 = os.environ.get("JOIN_REQS_DB2", DB_URI)
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002201572719"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002170811388"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", ""))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", ""))
 
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "50"))
