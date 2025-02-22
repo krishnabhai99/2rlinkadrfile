@@ -1,9 +1,3 @@
-#(©)Codexbotz
-#(©)Javpostr made by @rohit_1888
-
-
-
-
 
 from aiohttp import web
 from .route import routes
