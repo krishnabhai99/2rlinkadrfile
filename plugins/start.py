@@ -93,7 +93,7 @@ async def start_command(client: Client, message: Message):
         if SECONDS >= 0:
            
             notification_msg = await message.reply(
-                f"<b>This file will be deleted in {get_exp_time(SECONDS)}. Please save or forward it to your saved messages before it gets deleted.</b>"
+                f"<b>Tʜɪs ᴠɪᴅᴇᴏ ɪs ᴅᴇʟᴇᴛᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ɪɴ {get_exp_time(SECONDS)}...\nFᴏʀᴡᴀʀᴅ ɪɴ ʏᴏᴜʀ Sᴀᴠᴇᴅ Mᴀssᴀɢᴇs...!!</b>"
             )
 
             await asyncio.sleep(SECONDS)
@@ -112,7 +112,7 @@ async def start_command(client: Client, message: Message):
                     else None
                 )
                 keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("ɢᴇᴛ ᴠɪᴅᴇᴏ", url=reload_url)] if reload_url else [
+                [InlineKeyboardButton("ɢᴇᴛ ᴠɪᴅᴇᴏ", url=reload_url)] if reload_url else [],
                 InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
                 ])
 
@@ -127,6 +127,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),
                     InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")
                 ]
             ]
