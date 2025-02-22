@@ -1,5 +1,3 @@
-
-
 import os
 import logging
 import asyncio
@@ -57,7 +55,7 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Wᴀɪᴛ...")
+        temp_msg = await message.reply("Please wait...")
         try:
             messages = await get_messages(client, ids)
         except:
@@ -115,7 +113,7 @@ async def start_command(client: Client, message: Message):
                 [InlineKeyboardButton("ɢᴇᴛ ᴠɪᴅᴇᴏ", url=reload_url)] if reload_url else [],
                 [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
                 ])
-                
+
                 await notification_msg.edit(
                     "<b>›› Pʀᴇᴠɪᴏᴜs ᴠɪᴅᴇᴏ ᴡᴀs ᴅᴇʟᴇᴛᴇᴅ. Iғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛʜᴇ sᴀᴍᴇ ᴠɪᴅᴇᴏ ᴀɢᴀɪɴ, Cʟɪᴄᴋ ᴏɴ ɢᴇᴛ ᴠɪᴅᴇᴏ👇🏻</b>",
                     reply_markup=keyboard
@@ -181,14 +179,14 @@ async def not_joined(client: Client, message: Message):
         buttons = []
     
         if invite_link1:
-            buttons.append([InlineKeyboardButton(text="Join Channel 1", url=invite_link1)])
+            buttons.append([InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link1)])
         if invite_link2:
-            buttons.append([InlineKeyboardButton(text="Join Channel 2", url=invite_link2)])
+            buttons.append([InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link2)])
     
         try:
             buttons.append([
                 InlineKeyboardButton(
-                    text='Try Again',
+                    text='ᴛʀʏ ᴀɢᴀɪɴ',
                     url=f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ])
@@ -208,7 +206,7 @@ async def not_joined(client: Client, message: Message):
             disable_web_page_preview=True
         )
 
-        await asyncio.sleep(30)
+        await asyncio.sleep(60)
         await sent_message.delete()
 
     except Exception as e:
@@ -232,7 +230,7 @@ async def send_text(client: Bot, message: Message):
         deleted = 0
         unsuccessful = 0
         
-        pls_wait = await message.reply("<i>Broadcast ho rha till then FUCK OFF </i>")
+        pls_wait = await message.reply("<i>Broadcast ho rha till then  </i>")
         for chat_id in query:
             try:
                 await broadcast_msg.copy(chat_id)
