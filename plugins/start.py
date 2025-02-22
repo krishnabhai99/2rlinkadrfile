@@ -119,7 +119,8 @@ async def start_command(client: Client, message: Message):
 ])
 
 # Empty values ko filter karke hatao
-keyboard.inline_keyboard = [list(filter(None, keyboard.inline_keyboard[0]))]
+keyboard.inline_keyboard = [list(filter(None,
+ keyboard.inline_keyboard[0]))]
 
 await notification_msg.edit(
     "<b>›› Pʀᴇᴠɪᴏᴜs ᴠɪᴅᴇᴏ ᴡᴀs ᴅᴇʟᴇᴛᴇᴅ. Iғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛʜᴇ sᴀᴍᴇ ᴠɪᴅᴇᴏ ᴀɢᴀɪɴ, Cʟɪᴄᴋ ᴏɴ ɢᴇᴛ ᴠɪᴅᴇᴏ👇🏻</b>",
