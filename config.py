@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "50"))
 TIME = int(os.environ.get("TIME", "60"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>›› Hᴇʏ {frist} ×</blockquote>\n ɪ ᴀᴍ ᴀ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴅʀ ᴀɴɪᴍᴇ ʜɪɴᴅɪ ⚡.</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>›› Hᴇʏ {first} ×</blockquote>\n ɪ ᴀᴍ ᴀ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴅʀ ᴀɴɪᴍᴇ ʜɪɴᴅɪ ⚡.</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "6987158459").split()):
