@@ -1,6 +1,3 @@
-#(©)CodeXBotz
-
-#(©)Javpostr made by @rohit_1888
 
 
 import os
