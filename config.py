@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "50"))
 TIME = int(os.environ.get("TIME", "60"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hᴇʏ {first} \n\n ɪ ᴀᴍ ᴀ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴅʀ ᴀɴɪᴍᴇ ʜɪɴᴅɪ ⚡.</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>›› Hᴇʏ {frist} ×</blockquote>\n ɪ ᴀᴍ ᴀ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴅʀ ᴀɴɪᴍᴇ ʜɪɴᴅɪ ⚡.</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "6987158459").split()):
@@ -54,7 +54,7 @@ except ValueError:
 #Force sub message 
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
-    """<b><blockquote>›› ʜᴇʏ {mention} ×</blockquote> \n    ʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ‼️ ʟᴏᴏᴋs ʟɪᴋᴇ ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ ᴊᴏɪɴ ᴛᴏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʏᴇᴛ, ᴊᴏɪɴ ɴᴏᴡ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs.
+    """<b><blockquote>›› Hᴇʏ {mention} ×</blockquote> ʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ‼️ ʟᴏᴏᴋs ʟɪᴋᴇ ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ ᴊᴏɪɴ ᴛᴏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʏᴇᴛ, ᴊᴏɪɴ ɴᴏᴡ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs.
     </b>"""
 )
 
