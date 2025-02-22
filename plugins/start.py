@@ -57,7 +57,7 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Please wait...")
+        temp_msg = await message.reply("Wᴀɪᴛ...")
         try:
             messages = await get_messages(client, ids)
         except:
@@ -112,12 +112,12 @@ async def start_command(client: Client, message: Message):
                     else None
                 )
                 keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("Get File Again!", url=reload_url)] if reload_url else [],
-                [InlineKeyboardButton("Close", callback_data="close")]
+                [InlineKeyboardButton("ɢᴇᴛ ᴠɪᴅᴇᴏ", url=reload_url)] if reload_url else [
+                InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
                 ])
 
                 await notification_msg.edit(
-                    "<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",
+                    "<b>›› Pʀᴇᴠɪᴏᴜs ᴠɪᴅᴇᴏ ᴡᴀs ᴅᴇʟᴇᴛᴇᴅ. Iғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛʜᴇ sᴀᴍᴇ ᴠɪᴅᴇᴏ ᴀɢᴀɪɴ, Cʟɪᴄᴋ ᴏɴ ɢᴇᴛ ᴠɪᴅᴇᴏ👇🏻</b>",
                     reply_markup=keyboard
                 )
             except Exception as e:
@@ -127,8 +127,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚡️ About Me", callback_data="about"),
-                    InlineKeyboardButton("🔒 Close", callback_data="close")
+                    InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")
                 ]
             ]
         )
