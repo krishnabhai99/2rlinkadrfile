@@ -1,4 +1,3 @@
-#(©)Javpostr made by @rohit_1888
 
 import time
 import pymongo, os
