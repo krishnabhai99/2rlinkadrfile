@@ -164,7 +164,7 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
 @Bot.on_message(filters.command('start') & filters.private) 
 async def not_joined(client: Client, message: Message): 
     try: 
-        expire_time = datetime.now() + timedelta(seconds=20)
+        expire_time = datetime.now() + timedelta(seconds=60)
 
         subscribed1 = False  # Replace with actual subscription check
         subscribed2 = False  # Replace with actual subscription check
