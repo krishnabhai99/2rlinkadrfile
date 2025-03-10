@@ -12,10 +12,10 @@ load_dotenv()
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7747339851:AAG-wk_pDPZ8Slq-BFbhBlJrp-MHUvGx8zw")  
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "27705761"))
+APP_ID = int(os.environ.get("APP_ID", "14050586"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "42a60d9c657b106370c79bb0a8ac560c")
 
 #Your db channel Id
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002239014353"))
@@ -26,7 +26,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "6987158459"))
 #Port
 PORT = os.environ.get("PORT", "8080")
 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nextninzagame:Online@123@cluster0.jngj5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "")
 DB_NAME = os.environ.get("DATABASE_NAME", "AxomBotz")
 JOIN_REQS_DB = os.environ.get("JOIN_REQS_DB", DB_URI)
 JOIN_REQS_DB2 = os.environ.get("JOIN_REQS_DB2", DB_URI)
