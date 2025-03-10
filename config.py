@@ -33,7 +33,7 @@ JOIN_REQS_DB2 = os.environ.get("JOIN_REQS_DB2", DB_URI)
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002239014353"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", ""))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002452867637"))
 
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
